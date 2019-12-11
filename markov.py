@@ -30,10 +30,10 @@ class world:
             self.w[j] = 1
             self.w[(H-1)*L + j] = 1
 
-        #mur case 15
-        self.w[14] = 1;
+        # generate the write markov matrix
+        self.w[14] = 1
 
-        #valeur des cases
+        # insert values for tiles
         for i in range (H*L) :
             if self.w[i] == 0 :
                 self.value[i] = -0.04
