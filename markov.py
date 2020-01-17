@@ -1,4 +1,4 @@
-# Example of world building, display, and successor computation for the artificial 
+# Example of World building, display, and successor computation for the artificial 
 # intelligence path-finding lab
 #
 # Author: Didier Lime
@@ -7,8 +7,8 @@
 from random import random
 from sys import stdout
 
-class world:
-    # initialise the world
+class World:
+    # initialise the World
     # L is the number of columns
     # H is the number of lines
     # P is the probability of having a wall in a given tile
@@ -17,7 +17,7 @@ class world:
         self.H = H
         self.value = [0 for i in range(L*H)] # initialise every tile to empty (0)
 
-        # the world is represented by an array with one dimension
+        # the World is represented by an array with one dimension
         self.w = [0 for i in range(L*H)] # initialise every tile to empty (0)
 
         # add walls in the first and last columns
@@ -42,7 +42,7 @@ class world:
        
 
 
-    # display the world
+    # display the World
     def display(self):
         for i in range(self.H):
             for j in range(self.L):
@@ -65,7 +65,7 @@ class world:
 
             print('')
 
-    # compute the successors of tile number i in world w
+    # compute the successors of tile number i in World w
     def successors(self, i):
         if i < 0 or i >= self.L * self.H or self.w[i] == 1:
             # i is an incorrect tile number (outside the array or on a wall)
@@ -126,8 +126,8 @@ class world:
         return current_utility, iteration
 
 if __name__ == "__main__":
-    # create a world
-    w = world(6, 5, 0)
+    # create a World
+    w = World(6, 5, 0)
     U, k = w.computeUtility(0.99,0.01)
 
 
