@@ -87,7 +87,7 @@ class World:
             i = 0
             test = [False for i in range (self.H*self.L)]
             while i < (self.H*self.L) :
-                utility = current_utility.copy()
+                utility = current_utility[:]
                 if self.w[i] == 1:
                     test[i] = True
                 
