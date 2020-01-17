@@ -122,6 +122,6 @@ class World:
                         test[i] = True
                 # print(test)
                 i = i +1
-            iteration = iteration +1
+            iteration = iteration + 1
         return current_utility, iteration
 
