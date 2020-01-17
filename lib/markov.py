@@ -7,7 +7,7 @@
 from random import random
 from sys import stdout
 
-class world:
+class World:
     # initialise the world
     # L is the number of columns
     # H is the number of lines
@@ -125,14 +125,3 @@ class world:
             iteration = iteration +1
         return current_utility, iteration
 
-if __name__ == "__main__":
-    # create a world
-    w = world(6, 5, 0)
-    U, k = w.computeUtility(0.99,0.01)
-
-
-    # display it 
-    w.display()
-
-    print(U)
-    print(k)
