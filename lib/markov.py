@@ -81,7 +81,7 @@ class World:
         iteration = 0
         test = [False for i in range (self.H*self.L)]
         for i in range (self.H*self.L) :
-            current_utility[i] = w.value[i]
+            current_utility[i] = self.value[i]
         
         while not all(elem == True for elem in test) :
             i = 0
