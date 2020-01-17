@@ -120,18 +120,19 @@ class world:
                         test[i] = True
                     if abs(current_utility[i]-utility[i]) <= condition :
                         test[i] = True
-                print(test)
+                # print(test)
                 i = i +1
             iteration = iteration +1
         return current_utility, iteration
 
-# create a world
-w = world(6, 5, 0)
-U, k = w.computeUtility(0.99,0.01)
+if __name__ == "__main__":
+    # create a world
+    w = world(6, 5, 0)
+    U, k = w.computeUtility(0.99,0.01)
 
 
-# display it 
-w.display()
+    # display it 
+    w.display()
 
-print(U)
-print(k)
+    print(U)
+    print(k)
