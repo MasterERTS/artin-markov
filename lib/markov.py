@@ -1,8 +1,9 @@
-# Example of World building, display, and successor computation for the artificial 
-# intelligence path-finding lab
-#
-# Author: Didier Lime
-# Date: 2018-10-03
+'''
+@author = Didier Lime
+@co-author = Erwin Lejeune
+@date = ?
+@description = Markov Decision Processes with a defined world and fixed utilities.
+'''
 
 from random import random
 from sys import stdout
