@@ -8,11 +8,8 @@ from random import random
 from sys import stdout
 
 class World:
-<<<<<<< HEAD:lib/markov.py
     # initialise the world
-=======
-    # initialise the World
->>>>>>> master:markov.py
+
     # L is the number of columns
     # H is the number of lines
     # P is the probability of having a wall in a given tile
@@ -129,8 +126,6 @@ class World:
             iteration = iteration + 1
         return current_utility, iteration
 
-<<<<<<< HEAD:lib/markov.py
-=======
 if __name__ == "__main__":
     # create a World
     w = World(6, 5, 0)
@@ -142,4 +137,3 @@ if __name__ == "__main__":
 
     print(U)
     print(k)
->>>>>>> master:markov.py
