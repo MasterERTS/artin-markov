@@ -34,11 +34,11 @@ class MarkovTest():
 def test_utilities():
     mark_test = MarkovTest()
     for elem in mark_test.utilities:
-        assert elem >= 0
+        assert elem >= 0 or elem == -1
 
 def test_iterations():
     mark_test = MarkovTest()
-    assert mark_test.iterations > 0 and mark_test.iterations > (mark_test.H * mark_test.L / 2)
+    assert mark_test.iterations > 0 and mark_test.iterations >= (mark_test.H * mark_test.L / 2 - 1)
 
 def test_attributes():
     mark_test = MarkovTest()
