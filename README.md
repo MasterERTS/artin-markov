@@ -1,7 +1,8 @@
 # Markov Decision Processes 
 
+<p align="center">
 ![Environment](https://raw.githubusercontent.com/master-coro/artin-markov/master/res/mdp.png)
-
+<\p>
 The number in each tile represents the immediate reward obtained when moving to it. The black tiles are walls.
 
 The tiles with rewards +1 and −1 are terminal nodes : when the robot reaches them it can never move again. Hence, the utility for these tiles(from iteration 1 on) is just the immediate reward. 
