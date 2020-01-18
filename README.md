@@ -1,7 +1,7 @@
 # Markov Decision Processes 
 
 <p align="center">
-![Environment](https://raw.githubusercontent.com/master-coro/artin-markov/master/res/mdp.png)
+<img src="https://raw.githubusercontent.com/master-coro/artin-markov/master/res/mdp.png">
 </p>
 The number in each tile represents the immediate reward obtained when moving to it. The black tiles are walls.
 
