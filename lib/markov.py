@@ -126,15 +126,3 @@ class World:
                 i = i +1
             iteration = iteration + 1
         return current_utility, iteration
-
-if __name__ == "__main__":
-    # create a World
-    w = World(6, 5, 0)
-    U, k = w.computeUtility(0.99,0.01)
-
-
-    # display it 
-    w.display()
-
-    print(U)
-    print(k)
