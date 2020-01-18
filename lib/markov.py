@@ -1,4 +1,4 @@
-# Example of world building, display, and successor computation for the artificial 
+# Example of World building, display, and successor computation for the artificial 
 # intelligence path-finding lab
 #
 # Author: Didier Lime
@@ -8,7 +8,11 @@ from random import random
 from sys import stdout
 
 class World:
+<<<<<<< HEAD:lib/markov.py
     # initialise the world
+=======
+    # initialise the World
+>>>>>>> master:markov.py
     # L is the number of columns
     # H is the number of lines
     # P is the probability of having a wall in a given tile
@@ -17,7 +21,7 @@ class World:
         self.H = H
         self.value = [0 for i in range(L*H)] # initialise every tile to empty (0)
 
-        # the world is represented by an array with one dimension
+        # the World is represented by an array with one dimension
         self.w = [0 for i in range(L*H)] # initialise every tile to empty (0)
 
         # add walls in the first and last columns
@@ -42,7 +46,7 @@ class World:
        
 
 
-    # display the world
+    # display the World
     def display(self):
         for i in range(self.H):
             for j in range(self.L):
@@ -65,7 +69,7 @@ class World:
 
             print('')
 
-    # compute the successors of tile number i in world w
+    # compute the successors of tile number i in World w
     def successors(self, i):
         if i < 0 or i >= self.L * self.H or self.w[i] == 1:
             # i is an incorrect tile number (outside the array or on a wall)
@@ -125,3 +129,17 @@ class World:
             iteration = iteration + 1
         return current_utility, iteration
 
+<<<<<<< HEAD:lib/markov.py
+=======
+if __name__ == "__main__":
+    # create a World
+    w = World(6, 5, 0)
+    U, k = w.computeUtility(0.99,0.01)
+
+
+    # display it 
+    w.display()
+
+    print(U)
+    print(k)
+>>>>>>> master:markov.py
